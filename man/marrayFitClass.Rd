@@ -12,14 +12,14 @@
   A simple list-based class for the storage of parameters
   and results of normalization of cDNA microarray data.}
 
-\section{Creating Objects from the Class} {
+\section{Creating Objects from the Class}{
 Objects can be created by calls of the form \code{new('marrayFit', fit)} where
 \code{fit} is a list. Objects of \code{marrayFit} in the \code{StepNorm}
 package are typically created by functions \code{\link{fitWithin}} and
 \code{\link{fit2DWithin}}.
 }
 
-\section{List Components} {
+\section{List Components}{
 This class contains no slots, but objects should contain the following
 list components:
 \describe{
@@ -37,7 +37,7 @@ list components:
 }
 
 
-\section{Methods} {
+\section{Methods}{
   This class inherits directly from class \code{list} so any operation
   appropriate for lists will work on objects of this class.
 }

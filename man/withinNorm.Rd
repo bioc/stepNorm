@@ -108,10 +108,12 @@ withinNorm(marraySet,  y = "maM", subset = TRUE, norm = c("none",
 data(swirl)
 
 # Apply loess normalization for the first slide, span=0.4
-res.swirl1 <- withinNorm(swirl[,1], norm="loess")
+\dontrun{
+res.swirl1 <- withinNorm(swirl[,1], norm="loess")}
 
 # Apply loess normalization for the first slide, span=0.2
-res.swirl1 <- withinNorm(swirl[,1], norm="loess", span=0.2)
+\dontrun{
+res.swirl1 <- withinNorm(swirl[,1], norm="loess", span=0.2)}
 }      
      
 \keyword{models}

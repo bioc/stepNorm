@@ -96,9 +96,10 @@ norm.M <- swirl1.rlm$residuals ## matrix of normalized ratios
 ## 2D loess normalization, default span=0.2
 loess2D <- fit2DWithin(fun="loess2Dfit")
 swirl1.loess <- loess2D(swirl[,1])
-## 2D loess normalization, span=0.2
-loess2D.1 <- fit2DWithin(fun="loess2Dfit", span=0.2)
-swirl1.loess.1 <- loess2D.1(swirl[,1])
+## 2D loess normalization, span=0.4
+\dontrun{
+loess2D.1 <- fit2DWithin(fun="loess2Dfit", span=0.4)
+swirl1.loess.1 <- loess2D.1(swirl[,1])}
 
 ## 2D aov normalization
 aov2D <- fit2DWithin(fun="aov2Dfit")
@@ -108,8 +109,9 @@ swirl1.aov <- aov2D(swirl[,1])
 spatialMed2D <- fit2DWithin(fun="spatialMedfit")
 swirl1.spatialMed <- spatialMed2D(swirl[,1])
 ## 2D loess normalization, window width=9
+\dontrun{
 spatialMed2D.1 <- fit2DWithin(fun="spatialMedfit", width=9)
-swirl1.spatialMed.1 <- spatialMed2D.1(swirl[,1])
+swirl1.spatialMed.1 <- spatialMed2D.1(swirl[,1])}
 }
 
 \keyword{models}

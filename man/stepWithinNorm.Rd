@@ -136,11 +136,13 @@ steps <- list(
 			     
 #2)			     
 steps <- makeStepList(PL=NULL, Spatial2D=NULL)
-res.swirl <- stepWithinNorm(swirl[,1], wf.loc=steps)
+\dontrun{
+res.swirl <- stepWithinNorm(swirl[,1], wf.loc=steps)}
 
 
 # using AIC criterion for the first slide
-res.swirl <- stepWithinNorm(swirl[,1], criterion="A")
+\dontrun{
+res.swirl <- stepWithinNorm(swirl[,1], criterion="A")}
 }      
      
 \keyword{models}

@@ -139,6 +139,7 @@ data(swirl)
 
 # Apply sequential normalization for the first slide
 # default: loess(A)->median(PT)->median(PL)-> none (Spatial2D)
+\dontrun{
 res.swirl1 <- seqWithinNorm(swirl[,1])
 
 # normalized data
@@ -147,7 +148,7 @@ norm.swirl <- res.swirl1[[1]]
 # sequential normalization information
 step.swirl <- res.swirl1[[2]]
 
-
+}
 # median(A)->median(PT)->median(PL)->none(Spatial2D)
 res.swirl <- seqWithinNorm(swirl[,1], A="median",PT="median",PL="median",Spatial2D="none")
 

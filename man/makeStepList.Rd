@@ -108,7 +108,8 @@ wf.loc <- makeStepList(A=("loess"), Spatial2D=NULL)
 wf.loc <- makeStepList(A=c("rlm","loess"))
 
 # input to the stepWithinNorm function
-step.swirl1 <- stepWithinNorm(swirl[,1],wf.loc=wf.loc)
+\dontrun{
+step.swirl1 <- stepWithinNorm(swirl[,1],wf.loc=wf.loc)}
 }      
      
 \keyword{models}
