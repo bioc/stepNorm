@@ -28,7 +28,7 @@ aov2Dfit(x1, x2, y, subset=TRUE)
 rlm2Dfit(x1, x2, y, subset=TRUE)
 spatialMedfit(x1, x2, y, subset=TRUE, width = 11,  height = width)
 MedianSmooth(m, width, height=width)
-square{x}
+square(x)
 }
 
 \details{
