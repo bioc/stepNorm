@@ -10,4 +10,5 @@ Description: Stepwise normalization functions for cDNA microarray
         data.
 License: LGPL
 URL: http://www.biostat.ucsf.edu/jean/
+biocViews: Microarray, TwoChannel, Preprocessing
 
