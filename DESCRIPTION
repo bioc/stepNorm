@@ -1,10 +1,10 @@
 Package: stepNorm
-Version: 1.5.0
+Version: 1.5.1
 Date: 2004-10-18
 Title: Stepwise normalization functions for cDNA microarrays
 Author: Yuanyuan Xiao <yxiao@itsa.ucsf.edu>, Yee Hwa (Jean) Yang
         <jean@biostat.ucsf.edu>
-Depends: R (>= 1.8.0), marray, MASS
+Depends: R (>= 1.8.0), marray, MASS, methods
 Maintainer: Yuanyuan Xiao <yxiao@itsa.ucsf.edu>
 Description: Stepwise normalization functions for cDNA microarray
         data.
