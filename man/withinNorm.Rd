@@ -8,7 +8,7 @@
   thirteen basic location normalization procedures. The function
   operates on an object of class \code{\link[marrayClasses]{marrayRaw}}
   or \code{\link[marrayClasses]{marrayNorm}} and returns an object of
-  class \code{\link[marrayClasses]{Norm}}.}
+  class \code{\link[marrayClasses]{Norm}}.
 }
 
 \usage{

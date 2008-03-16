@@ -244,7 +244,7 @@ calcAIC <- function (fit, subset=TRUE, scale = 0, enp, loss.fun=square)
 
   if (!missing(enp)) enp <- enp
   else enp <- fit$enp
-  residuals <- if(is.null(fit$residuals)) fit[subset]
+  residuals <- if(is.null(tryCatch(residuals(fit), error = function(e) NULL))) fit[subset]
                else fit$residuals[subset]
   n <- length(residuals)
   k <- 2*enp
@@ -260,7 +260,7 @@ calcBIC <- function (fit, subset=TRUE, scale = 0, enp, loss.fun=square)
 
   if (!missing(enp)) enp <- enp
   else enp <- fit$enp
-  residuals <- if(is.null(fit$residuals)) fit[subset]
+  residuals <- if(is.null(tryCatch(residuals(fit), error = function(e) NULL))) fit[subset]
                else fit$residuals[subset]
   n <- length(residuals)
   k <- enp*log(n)

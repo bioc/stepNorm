@@ -58,7 +58,7 @@ medWithin <- fitWithin(fun="medfit")
 ## medFit is an object of class marrayFit
 medFit <- medWithin(swirl[,1])
 ## normalized ratios is stored in:
-norm.M <- medFit$residuals }
+norm.M <- medFit$residuals
 
 }
 

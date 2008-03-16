@@ -1,5 +1,5 @@
 Package: stepNorm
-Version: 1.11.0
+Version: 1.11.1
 Date: 2004-10-18
 Title: Stepwise normalization functions for cDNA microarrays
 Author: Yuanyuan Xiao <yxiao@itsa.ucsf.edu>, Yee Hwa (Jean) Yang
@@ -11,4 +11,3 @@ Description: Stepwise normalization functions for cDNA microarray
 License: LGPL
 URL: http://www.biostat.ucsf.edu/jean/
 biocViews: Microarray, TwoChannel, Preprocessing
-
