@@ -34,7 +34,7 @@ withinNorm(marraySet,  y = "maM", subset = TRUE, norm = c("none",
       \item{rlm: }{global intensity or A-dependent robust linear
 	normalization using the \code{\link[MASS]{rlm}} function}
       \item{loess: }{global intensity or A-dependent robust nonlinear
-	normalization using the \code{\link[MASS]{loess}} function}
+	normalization using the \code{\link[stats]{loess}} function}
       \item{medianPrintTip: }{within-print-tip-group median
 	normalization}
       \item{rlmPrintTip: }{within-print-tip-group intensity or
@@ -42,7 +42,7 @@ withinNorm(marraySet,  y = "maM", subset = TRUE, norm = c("none",
 	\code{\link[MASS]{rlm}} function}
       \item{loessPrintTip: }{within-print-tip-group intensity or
 	A-dependent robust nonlinear normalization using the
-	\code{\link[MASS]{loess}} function}
+	\code{\link[stats]{loess}} function}
       \item{medianPlate: }{within-well-plate-group median
 	normalization}
       \item{rlmPlate: }{within-well-plate-group intensity or
@@ -50,13 +50,13 @@ withinNorm(marraySet,  y = "maM", subset = TRUE, norm = c("none",
 	\code{\link[MASS]{rlm}} function}
       \item{loessPlate: }{within-well-plate-group intensity or
 	A-dependent robust nonlinear normalization using the
-	\code{\link[MASS]{loess}} function}
+	\code{\link[stats]{loess}} function}
       \item{aov2D: }{spatial bivariate location normalization using
 	ANOVA}
       \item{rlm2D: }{spatial bivariate location normalization using the
 	\code{\link[MASS]{rlm}} function}
       \item{loess2D: }{spatial bivariate location normalization using the
-	\code{\link[MASS]{loess}} function}
+	\code{\link[stats]{loess}} function}
       \item{spatialMedian: }{spatial location normalization using a
 	spatial median approach (see Wilson et al. (2003) in
 	reference)}

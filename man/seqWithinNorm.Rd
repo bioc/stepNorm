@@ -32,7 +32,7 @@
     for the adjustment of intensity or \eqn{A} bias:
     \describe{
       \item{loess: }{global intensity or \eqn{A}-dependent robust nonlinear
-	normalization using the \code{\link[MASS]{loess}} function}
+	normalization using the \code{\link[stats]{loess}} function}
       \item{rlm: }{global intensity or \eqn{A}-dependent robust linear
 	normalization using the \code{\link[MASS]{rlm}} function}
       \item{median: }{global median location normalization}
@@ -47,7 +47,7 @@
       \item{rlm: }{within-print-tip-group robust linear normalization
 	using the \code{\link[MASS]{rlm}} function}
       \item{loess: }{within-print-tip-group robust nonlinear
-	normalization using the \code{\link[MASS]{loess}} function}
+	normalization using the \code{\link[stats]{loess}} function}
       \item{none: }{no normalization for the \eqn{PT} bias}
     }
     If not specified, \code{median} normalization within print-tip will be applied.
@@ -59,7 +59,7 @@
       \item{rlm: }{within-well-plate robust linear normalization
 	using the \code{\link[MASS]{rlm}} function}
       \item{loess: }{within-well-plate robust nonlinear
-	normalization using the \code{\link[MASS]{loess}} function}
+	normalization using the \code{\link[stats]{loess}} function}
       \item{none: }{no normalization for the \eqn{PL} bias}
     }
     If not specified, \code{median} normalization within well-plate will be applied.
@@ -73,7 +73,7 @@
        \item{rlm2D: }{spatial bivariate location normalization using the
 	 \code{\link[MASS]{rlm}} function}
        \item{loess2D: }{spatial bivariate location normalization using
-	 the \code{\link[MASS]{loess}} function}
+	 the \code{\link[stats]{loess}} function}
        \item{spatialMedian: }{spatial location normalization using a
 	spatial median approach (see Wilson et al. (2003) in
 	reference)}
