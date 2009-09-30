@@ -27,7 +27,7 @@ subset=TRUE, fun = aov2Dfit, ...)
       \item{rlm2Dfit}{for robust linear regression using the
 	\code{\link[MASS]{rlm}} function}
       \item{loess2Dfit}{for robust local regression using the
-	\code{\link[modreg]{loess}} function}
+	\code{\link[stats]{loess}} function}
       \item{aov2Dfit}{for linear regression using the \code{\link{lm}}
 	function}
       \item{spatialMedfit}{for spatial median normalization}
@@ -60,7 +60,8 @@ subset=TRUE, fun = aov2Dfit, ...)
     \item{residuals}{: A numeric matrix of normalized values (typically
       log ratios (\eqn{M})).}
     \item{fitted}{: A numeric matrix of the fitted values.}
-    \item{enp}{: The equivalent number of parameters; see \code{\link[modreg]{loess}}.}
+    \item{enp}{: The equivalent number of parameters; see
+      \code{\link[Stats]{loess}}.} 
     \item{df.residual}{: The residual degrees of freedom.}
     \item{fun}{: A character string indicating the name of the function
       used for normalization.}

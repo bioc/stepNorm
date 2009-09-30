@@ -27,7 +27,7 @@ fitWithin(x.fun = "maA", y.fun = "maM", z.fun = TRUE, subset=TRUE, fun = "medfit
       \item{rlmfit}{for global intensity or A-dependent location normalization using 
 the \code{\link[MASS]{rlm}} function}
       \item{loessfit}{for global intensity or A-dependent location normalization using 
-	the \code{\link[modreg]{loess}} function}
+	the \code{\link[Stats]{loess}} function}
       }}
   \item{\dots}{Miscs arguments to be passed in \code{fun}}
 }
