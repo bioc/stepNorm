@@ -27,7 +27,7 @@ fitWithin(x.fun = "maA", y.fun = "maM", z.fun = TRUE, subset=TRUE, fun = "medfit
       \item{rlmfit}{for global intensity or A-dependent location normalization using 
 the \code{\link[MASS]{rlm}} function}
       \item{loessfit}{for global intensity or A-dependent location normalization using 
-	the \code{\link[Stats]{loess}} function}
+	the \code{\link[stats]{loess}} function}
       }}
   \item{\dots}{Miscs arguments to be passed in \code{fun}}
 }
@@ -57,7 +57,7 @@ the \code{\link[MASS]{rlm}} function}
     \item{residuals}{: A numeric matrix of normalized values (typically
       log ratios (\eqn{M})).}
     \item{fitted}{: A numeric matrix of the fitted values.}
-    \item{enp}{: The equivalent number of parameters; see \code{\link[moderg]{loess}}.}
+    \item{enp}{: The equivalent number of parameters; see \code{\link[stats]{loess}}.}
     \item{df.residual}{: The residual degrees of freedom.}
     \item{fun}{: A character string indicating the name of the function
       used for normalization.}

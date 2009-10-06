@@ -5,7 +5,7 @@
 \description{
   This function performs 2D location normalization on cDNA
   micoroarray. It operates on class
-  \code{\link[marrayClasses]{marrayRaw}}
+  \code{\link[marray:marrayRaw-class]{marrayRaw}}
   or class \code{\link[marrayClasses]{marrayNorm}}. It allows  the user
   to choose from a set of four basic normalization procedures.
 }
@@ -61,7 +61,7 @@ subset=TRUE, fun = aov2Dfit, ...)
       log ratios (\eqn{M})).}
     \item{fitted}{: A numeric matrix of the fitted values.}
     \item{enp}{: The equivalent number of parameters; see
-      \code{\link[Stats]{loess}}.} 
+      \code{\link[stats]{loess}}.} 
     \item{df.residual}{: The residual degrees of freedom.}
     \item{fun}{: A character string indicating the name of the function
       used for normalization.}
