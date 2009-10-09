@@ -13,13 +13,13 @@
 stepWithinNorm(marraySet, subset=TRUE, wf.loc, criterion = c("BIC", "AIC"), loss.fun = square)
 }
 \arguments{
-  \item{marraySet}{Object of class \code{\link[marrayClasses]{marrayRaw}} or class
-    \code{\link[marrayClasses]{marrayNorm}}, containing intensity data for the batch of
-    arrays to be normalized.}
+  \item{marraySet}{Object of class \code{\link[marray:marrayRaw-class]{marrayRaw}}
+    or class \code{\link[marray:marrayNorm-class]{marrayNorm}}, containing
+    intensity data for the batch of arrays to be normalized.}
   \item{subset}{A "logical" or "numeric" vector indicating the subset of
           points used to compute the  normalization values.}
   \item{wf.loc}{Object of class \code{\link{list}}, each component is a step for the removal of a
-    particular systematic varation. Typically each step is also a list
+    particular systematic variation. Typically each step is also a list
     of several candidate models of different complexity, the best model
     will be chosen by the \code{criterion} specified. For a user
     friendly way of constructing such a list, consult the function
@@ -55,7 +55,7 @@ stepWithinNorm(marraySet, subset=TRUE, wf.loc, criterion = c("BIC", "AIC"), loss
   to do so:
   \tabular{lll}{
     systematic variation \tab model \tab function \cr
-    intenstiy (A) \tab median \tab fitWithin(fun="medfit") \cr
+    intensity (A) \tab median \tab fitWithin(fun="medfit") \cr
     A\tab robust linear \tab fitWithin(fun="rlmfit") \cr
     A\tab robust nonlinear \tab fitWithin(fun="loessfit") \cr
     print-tip (PT) \tab median \tab fitWithin(z.fun="maPrintTip", fun="medfit") \cr
@@ -83,8 +83,8 @@ stepWithinNorm(marraySet, subset=TRUE, wf.loc, criterion = c("BIC", "AIC"), loss
 
 \value{
   An object of class "list":
-  \item{normdata}{an object of class \code{\link[marrayClasses]{marrayNorm}}, containing
-  the normalized intensity data.}
+  \item{normdata}{an object of class \code{\link[marray:marrayNorm-class]{marrayNorm}},
+    containing the normalized intensity data.}
   \item{res}{a dataframe of the stepwise normalization result,
     containing the name of the model chosen for each step, deviance,
     equivalent number of parameters, AIC/BIC value.}

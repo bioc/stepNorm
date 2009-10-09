@@ -6,9 +6,9 @@
   This function is a wrapper function around \code{fitWtihin} and
   \code{fit2DWithin}. It allows the user to choose from a set of
   thirteen basic location normalization procedures. The function
-  operates on an object of class \code{\link[marrayClasses]{marrayRaw}}
-  or \code{\link[marrayClasses]{marrayNorm}} and returns an object of
-  class \code{\link[marrayClasses]{Norm}}.
+  operates on an object of class \code{\link[marray:marrayRaw-class]{marrayRaw}}
+  or \code{\link[marray:marrayNorm-class]{marrayNorm}} and returns an object of
+  class \code{\link[marray:marrayNorm-class]{marrayNorm}}.
 }
 
 \usage{
@@ -19,9 +19,9 @@ withinNorm(marraySet,  y = "maM", subset = TRUE, norm = c("none",
 
 }
 \arguments{
-  \item{marraySet}{Object of class \code{\link[marrayClasses]{marrayRaw}} or class
-    \code{\link[marrayClasses]{marrayNorm}}, containing intensity data for the batch of
-    arrays to be normalized.}
+  \item{marraySet}{Object of class \code{\link[marray:marrayRaw-class]{marrayRaw}}
+    or class \code{\link[marray:marrayNorm-class]{marrayNorm}}, containing
+    intensity data for the batch of arrays to be normalized.}
   \item{y}{Name of accessor method for spot statistics, usually the
     log-ratio \code{maM}.}
   \item{subset}{A "logical" or "numeric" vector indicating the subset of
@@ -61,14 +61,14 @@ withinNorm(marraySet,  y = "maM", subset = TRUE, norm = c("none",
 	spatial median approach (see Wilson et al. (2003) in
 	reference)}
   }}
-  \item{\dots}{Misc arguements for the specified \code{norm} function}
+  \item{\dots}{Misc arguments for the specified \code{norm} function}
 }
 
 \details{
   The function \code{withinNorm} dispatches to the function
   \code{\link{fitWithin}} or \code{\link{fit2DWithin}} with specified
   arguments according to the choice of \code{norm}. For instance,
-  when \code{norm="loess"} for global intenstiy dependent robust
+  when \code{norm="loess"} for global intensity dependent robust
   nonlinear normalization, \code{withinNorm} calls
   \code{fitWithin(fun="loess")} with the default span parameter set
   at 0.4. If a different span is preferred, it should be input by
@@ -80,8 +80,8 @@ withinNorm(marraySet,  y = "maM", subset = TRUE, norm = c("none",
      
 
 \value{
-  An object of class \code{\link[marrayClasses]{marrayNorm}}, containing
-  the normalized intensity data.
+  An object of class \code{\link[marray:marrayNorm-class]{marrayNorm}},
+  containing the normalized intensity data.
 }
 
 \references{

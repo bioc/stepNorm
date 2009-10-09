@@ -5,8 +5,8 @@
 \description{
   This function performs 2D location normalization on cDNA
   micoroarray. It operates on class
-  \code{\link[marray:marrayRaw-class]{marrayRaw}}
-  or class \code{\link[marrayClasses]{marrayNorm}}. It allows  the user
+  \code{\link[marray:marrayRaw-class]{marrayRaw}} or class
+  \code{\link[marray:marrayNorm-class]{marrayNorm}}. It allows the user
   to choose from a set of four basic normalization procedures.
 }
 
@@ -32,7 +32,7 @@ subset=TRUE, fun = aov2Dfit, ...)
 	function}
       \item{spatialMedfit}{for spatial median normalization}
   }}
-  \item{\dots}{Misc arguements for \code{fun}}
+  \item{\dots}{Misc arguments for \code{fun}}
 }
 \details{
   The spot statistic named in \code{y} is regressed on spot row and
@@ -49,14 +49,14 @@ subset=TRUE, fun = aov2Dfit, ...)
   The function \code{fit2DWithin} returns a function (\eqn{F}) with
   bindings for \code{x1.fun}, \code{x2.fun}, \code{y.fun}, \code{subset}
   and \code{fun}. When the function \eqn{F} is evaluated with an object
-  of class \code{\link[marrayClasses]{marrayNorm}} or
-  \code{\link[marrayClasses]{marrayRaw}}, it carries out normalization
-  and returns an object of class \code{\link{marrayFit}} that contains
-  the normalization information as a list with the following
+  of class \code{\link[marray:marrayNorm-class]{marrayNorm}} or
+  \code{\link[marray:marrayNorm-class]{marrayRaw}}, it carries out
+  normalization and returns an object of class \code{\link{marrayFit}}
+  that contains the normalization information as a list with the following
   components: 
     \item{varfun}{: A character vector of names of predictor variables.}
     \item{x}{: A numeric matrix of predictor variables.}
-    \item{y}{: A numeric matrix of repsonses.}
+    \item{y}{: A numeric matrix of responses.}
     \item{residuals}{: A numeric matrix of normalized values (typically
       log ratios (\eqn{M})).}
     \item{fitted}{: A numeric matrix of the fitted values.}

@@ -19,7 +19,7 @@ calcBIC(fit, subset=TRUE, scale = 0, enp, loss.fun = square)
     missing, the \code{enp} component from fit will be used.}
   \item{loss.fun}{the loss function used to calculate deviance; the
     default uses the squared deviation from the fitted  values;
-    one could also use abosulate deviations (\code{\link{abs}}).}
+    one could also use absolute deviations (\code{\link{abs}}).}
 }
 
 \details{

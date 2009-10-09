@@ -3,10 +3,10 @@
 
 \title{Generate plate IDs}
 \description{
-  This function is a modification of the \code{\link[marrayClasses]{maCompPlate}}
-  function in the \code{marrayClasses} library. It generates plate IDs
+  This function is a modification of the \code{\link[marray]{maCompPlate}}
+  function in the \code{marray} library. It generates plate IDs
   from the dimensions of the grid and spot matrices. Unlike the
-  \code{\link[marrayClasses]{maCompPlate}} function, the number of spots is not
+  \code{\link[marray]{maCompPlate}} function, the number of spots is not
   necessarily a multiple of the number of wells on a plate, therefore
   this function allows empty spots on the slide. 
 }
@@ -38,15 +38,15 @@ maCompPlate2(no.plates = NULL, n = 384)
 \value{
    The function \code{maCompPlate2} returns a function with bindings for
    \code{no.plates} and \code{n}, which when receiving a object of 
-   \code{\link[marrayClasses]{marrayRaw}},
-   \code{\link[marrayClasses]{marrayNorm}}
-   or \code{\link[marrayClasses]{marrayLayout}} class, it returns a
-   vector of plate IDs (\code{\link{factor}}).
+   \code{\link[marray:marrayRaw-class]{marrayRaw}},
+   \code{\link[marray:marrayNorm-class]{marrayNorm}}
+   or \code{\link[marray:marrayLayout-class]{marrayLayout}} class,
+   it returns a vector of plate IDs (\code{\link{factor}}).
 }
 
 \author{Yuanyuan Xiao}
 
-\seealso{\code{\link[marrayClasses]{maCompPlate}}, \code{\link[marrayClasses]{marrayLayout}}.}
+\seealso{\code{\link[marray]{maCompPlate}}, \code{\link[marray:marrayLayout-class]{marrayLayout}}.}
 \examples{
 ####### case 1: no empty spots on the slide, full plates used
 L<-new("marrayLayout", maNgr=4, maNgc=4, maNsr=22, maNsc=24)

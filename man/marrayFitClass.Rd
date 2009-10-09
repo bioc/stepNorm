@@ -25,7 +25,7 @@ list components:
 \describe{
   \item{varfun}{: A character vector of names of predictor variables.}
   \item{x}{: A numeric matrix of predictor variables.}
-  \item{y}{: A numeric matrix of repsonses.}
+  \item{y}{: A numeric matrix of responses.}
   \item{residuals}{: A numeric matrix of normalized values (typically
     log ratios (\eqn{M}))}.
   \item{fitted}{: A numeric matrix of the fitted values.}

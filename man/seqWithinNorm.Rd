@@ -3,7 +3,7 @@
 
 \title{Sequential within-slide normalization function}
 \description{
-  This function conducts cDNA microarray normalization in a seqential
+  This function conducts cDNA microarray normalization in a sequential
   fashion. In a two-color cDNA array setting, within-slide normalization calibrates signals
   from the two channels to remove non-biological variation introduced by
   various processing steps.
@@ -18,14 +18,14 @@
   criterion = c("BIC", "AIC"))
 }
 \arguments{
-  \item{marraySet}{Object of class \code{\link[marrayClasses]{marrayRaw}} or class
-    \code{\link[marrayClasses]{marrayNorm}}, containing intensity data for the batch of
-    arrays to be normalized.}
+  \item{marraySet}{Object of class \code{\link[marray:marrayRaw-class]{marrayRaw}}
+    or class \code{\link[marray:marrayNorm-class]{marrayNorm}}, containing
+    intensity data for the batch of arrays to be normalized.}
   \item{y}{Name of accessor method for spot statistics, usually the
     log-ratio \code{maM}.}
   \item{subset}{A "logical" or "numeric" vector indicating the subset of
     points used to compute the  normalization values.}
-  \item{loss.fun}{The loss function used in calucating deviance, the
+  \item{loss.fun}{The loss function used in calculating deviance, the
     default uses squared sum of residuals; for absolute sum of
     residuals, use \code{\link{abs}}}
   \item{A}{A character string specifying the normalization model
@@ -106,8 +106,9 @@
 
 \value{
   An object of class "list":
-  \item{normdata}{an object of class \code{\link[marrayClasses]{marrayNorm}}, containing
-  the normalized intensity data.}
+  \item{normdata}{an object of class
+    \code{\link[marray:marrayNorm-class]{marrayNorm}}, containing the
+    normalized intensity data.}
   \item{res}{a list of the sequential normalization result for each
     slide within the marray dataset. Each list component is also a list
     containing the name of the biases, deviance, equivalent number of

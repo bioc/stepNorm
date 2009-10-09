@@ -3,8 +3,10 @@
 
 \title{Simple location normalization function for cDNA microarray data}
 \description{
-  This function performs location normalization on cDNA
-  micoroarray. It operates on class \code{\link[marrayClasses]{marrayRaw}} or class \code{\link[marrayClasses]{marrayNorm}}. It allows  the user to choose from a set of three basic normalization procedures.
+  This function performs location normalization on cDNA micoroarray. It
+  operates on class \code{\link[marray:marrayRaw-class]{marrayRaw}} or
+  class \code{\link[marray:marrayNorm-class]{marrayNorm}}. It allows the
+  user to choose from a set of three basic normalization procedures.
 }
 
 \usage{
@@ -16,8 +18,8 @@ fitWithin(x.fun = "maA", y.fun = "maM", z.fun = TRUE, subset=TRUE, fun = "medfit
   \item{y.fun}{Name of accessor method for spot statistics, usually the log-ratio \code{maM}.}
   \item{z.fun}{Name of accessor method for spot statistic used to
     stratify the data, usually a layout parameter,
-    e.g. \code{\link[marrayClasses]{maPrintTip}} or
-    \code{\link[marrayClasses]{maCompPlate}}. If \code{z} is not a
+    e.g. \code{\link[marray:marrayLayout-class]{maPrintTip}} or
+    \code{\link[marray]{maCompPlate}}. If \code{z} is not a
     character, e.g. NULL,  the data are not stratified.}
   \item{subset}{A "logical" or "numeric" vector indicating the subset of
           points used to compute the  normalization values.}
@@ -46,10 +48,10 @@ the \code{\link[MASS]{rlm}} function}
   The function \code{fitWithin} returns a function(\eqn{F}) with
   bindings for \code{x.fun}, \code{y.fun}, \code{z.fun}, \code{subset}
   and \code{fun}. When the function \eqn{F} is evaluated with an object
-  of class \code{\link[marrayClasses]{marrayNorm}} or
-  \code{\link[marrayClasses]{marrayRaw}}, it carries out normalization
-  and returns an object of class \code{\link{marrayFit}} that contains
-  the normalization information as a list with the following 
+  of class \code{\link[marray:marrayNorm-class]{marrayNorm}} or
+  \code{\link[marray:marrayRaw-class]{marrayRaw}}, it carries out
+  normalization and returns an object of class \code{\link{marrayFit}}
+  that contains the normalization information as a list with the following 
   list components:
     \item{varfun}{: A character vector of names of predictor variables.}
     \item{x}{: A numeric matrix of predictor variables.}
