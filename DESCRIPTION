@@ -4,7 +4,8 @@ Date: 2008-10-08
 Title: Stepwise normalization functions for cDNA microarrays
 Author: Yuanyuan Xiao <yxiao@itsa.ucsf.edu>, Yee Hwa (Jean) Yang
         <jean@biostat.ucsf.edu>
-Depends: R (>= 1.8.0), marray, MASS, methods
+Depends: R (>= 1.8.0), marray, methods
+Imports: marray, MASS, methods, stats
 Maintainer: Yuanyuan Xiao <yxiao@itsa.ucsf.edu>
 Description: Stepwise normalization functions for cDNA microarray
         data.

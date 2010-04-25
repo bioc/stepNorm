@@ -1,0 +1,12 @@
+import(methods)
+importMethodsFrom(marray, maGridCol, maGridRow, maM, "maM<-", maNgc,
+                  maNgr, maNsamples, maNsc, maNspots, maNsr, maSub)
+importFrom(marray, maNum2Logic, sum.na)
+importFrom(MASS, rlm)
+importFrom(stats, lm, loess, loess.control, median, predict)
+
+exportClasses(marrayFit)
+export(aov2Dfit, calcAIC, calcBIC, calcEnp, fit2DWithin, fitWithin,
+       loess2Dfit, loessfit, maCompPlate2, makeStepList, medfit,
+       MedianSmooth, noFit, rlm2Dfit, rlmfit, seqWithinNorm,
+       spatialMedfit, square, stepWithinNorm, withinNorm)

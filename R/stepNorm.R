@@ -3,7 +3,6 @@
 ###   fitMethods.R
 ### A list  of fitting methods
 ###########################################################
-require(MASS)
 loessfit <- function(x, y, span=0.4, subset=TRUE,
                      degree=1, family="symmetric",
                      control=loess.control(trace.hat="approximate", iteration=5, surface="direct"),...)
@@ -76,7 +75,6 @@ MedianSmooth <- function(m, width, height=width)
 ###	Miscs.R
 ### Miscellaneous functions
 
-require(marray)
 ###### if no no.plates  given, then assume no empty spots on the slide
 maCompPlate2 <- function(no.plates = NULL,  n = 384) 
 {
@@ -226,12 +224,7 @@ fit2DWithin <- function(x1.fun="maSpotRow", x2.fun="maSpotCol",
 
 ###########################################################################
 ## Set Class
-require(methods)
-.initMarrayFit <- function(where) {
-setClass("marrayFit", representation("list"), where=where)
- }
-
-#etClass("marrayFit", representation("list"))
+setClass("marrayFit", representation("list"))
 
 ##########################################################
 ###	Criteria.R	
@@ -592,27 +585,3 @@ seqWithinNorm <- function(marraySet, y="maM", subset=TRUE, loss.fun=square,
       
   return(list(normdata=mnormSet, res=Res))
 }
-
-
-##########################################################################
-.First.lib <- function(libname, pkgname, where) {
-    require(methods)
-    #require(Biobase) || stop("can't load without Biobase")
-    require(marray)
-    require(MASS)
-    if(missing(where)) {
-        where <- match(paste("package:", pkgname, sep=""), search())
-        if(is.na(where)) {
-            warning(paste("Not a package name: ",pkgname))
-            return()
-        }
-    where <- pos.to.env(where)
-    }
-    .initMarrayFit(where)
-    cacheMetaData(as.environment(where))
-  }
-
-
-
-
-
